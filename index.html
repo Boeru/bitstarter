@@ -50,11 +50,12 @@ The maximum-scale, minimum-scale, and user-scalable properties control how users
 
       /* Main body and headings */
       body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-family: Helvetica neue, 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        font-family: Helvetica neue, 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
+      
       }
       p.lead {
         padding-top: 1.5%;
@@ -74,14 +75,14 @@ The maximum-scale, minimum-scale, and user-scalable properties control how users
         padding: 2% 0%;
       }
       .actions {
-        background-color: #343434;
+        background-color: lightgrey;
         padding: 3% 0%;
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
       .statistics h3, .statistics p {
-        color: white;
+        color: #333333;
       }
 
       /* Marketing Copy and Footer */
@@ -107,9 +108,37 @@ The maximum-scale, minimum-scale, and user-scalable properties control how users
         border: none;
       }
 
-      
-      
-    </style>
+      .linediv-l {
+      border-right: 1px #333333 solid;
+      }  
+      .linediv-r {
+border-left: 1px #333333 solid;
+}
+
+.pull-right {
+
+float: right;
+}
+.asset {
+
+float: right;
+}
+.circle {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 1em auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+    </Style>
   </head>
   <body>
 
@@ -126,8 +155,8 @@ The maximum-scale, minimum-scale, and user-scalable properties control how users
           </button>
           <a class="brand" href="#">YonoApp</a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Blog</a></li>
+            <ul class="nav pull-right">
+              <li><a href="#">Blog</a></li>
               <li><a href="#about">Facebook</a></li>
               <li><a href="#contact">Twitter</a></li>
             </ul>
@@ -155,21 +184,28 @@ The maximum-scale, minimum-scale, and user-scalable properties control how users
           <p class="lead">Ask the world a simple question.</p>
         </div>
       </div>
-      <div class="row-fluid pitch">
+      <div class="row-fluid section2">
         <div class="span5 offset1 video">
  <img class="img-polaroid" src="https://lh3.googleusercontent.com/-SFOPneaISu0/UfS2nw4rcOI/AAAAAAAAA0A/0w19RshRyOg/w480-h698-no/yonoshadowimprov.png">   
  
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="span8 offset2">
+
+        <div class="span5 video ">
+<iframe src="http://player.vimeo.com/video/71190339?title=0&amp;byline=0&amp;portrait=0" width="360" height="210" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+</div><!--
+<div class="row-fluid pitch">
+ <div class="span5 actions">
+          <iframe src="http://player.vimeo.com/video/71190339?title=0&amp;byline=0&amp;portrait=0" width="360" height="210" frameb\
+order="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></<div class="span8 offset2">
             <div class="statistics">
              <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
 different in horizontal and vertical layouts, illustrating
 media queries. -->
-                <div class="linediv-l">
+              <!--  <div class="linediv-l">
                 <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
@@ -188,9 +224,60 @@ media queries. -->
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
+           <!-- <div class="thermometer progress active">
               <div class="bar bar-success" style="width: 60%;"></div>
               <div class="bar bar-warning" style="width: 40%;"></div>
+            </div>
+          </div>
+         <!-- <div class="span6 offset3 order">
+            <!-- Standard Bootstrap button. -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+         <!--   <button class="btn btn-success btn-large">Preorder</button>
+          </div>
+          <div class="span8 offset2 social">
+            <!-- Social buttons are not included in default Bootstrap. -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+           <!-- <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+          </div>
+        </div>
+      </div>-->
+
+</div>
+</div>
+
+<div class="row-fluid heading">
+        <div class="span12 actions">
+         <!-- <div class="row-fluid pitch">
+ <div class="span5 actions">-->
+          <div class="span8 offset2">
+            <div class="statistics">
+             <div class="span4">
+                <!-- linediv-l and linediv-r give dividing lines that look                                               
+different in horizontal and vertical layouts, illustrating                                                               
+media queries. -->
+                <div class="linediv-l">
+                <h3>0</h3> <p>backers</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-c">
+                  <h3>$0</h3> <p>of $30,000</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-r">
+                <h3>10 Days</h3> <p>until start</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="span10 offset1">
+            <!-- Bootstrap progress bar -->
+            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+            <div class="thermometer progress active">
+              <div class="bar bar-success" style="width: 0%;"></div>
+              <div class="bar bar-warning" style="width: 100%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
@@ -206,6 +293,10 @@ media queries. -->
           </div>
         </div>
       </div>
+</div>
+        </div>
+      </div>
+
 
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
@@ -213,8 +304,8 @@ media queries. -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
+        
+     </div>
         <div class="span5 copy">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -249,7 +340,9 @@ media queries. -->
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+        <div class="circle" style="background-image:                                                                                                     
+       url('https://si0.twimg.com/profile_images/378800000081294716/4771227638b4005f8577c41c5025e0e2.jpeg')">
+</div>      <!-- <img class="img-polaroid" src="http://placehold.it/480x300">-->
         </div>
       </div>
 
@@ -298,8 +391,7 @@ media queries. -->
           <p>This work is licensed under
             the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
               By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+            </a></p>
         </div>
       </div>
     </div>
