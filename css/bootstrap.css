@@ -266,7 +266,7 @@ table {
   select {
     background: #fff !important;
   }
-  .navbar {
+  .btn {
     display: none;
   }
   .table td,
